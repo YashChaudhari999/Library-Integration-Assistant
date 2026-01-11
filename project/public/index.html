@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Integration Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M21 21H3M3 7V3h18v4M7 21v-4m10 4v-4" />
+                    <path d="M17 7v10M7 7v10" />
+                </svg>
+                Library Integration Assistant
+            </h1>
+            <p>Simplify your library integration process with AI. Input an NPM package and your existing code to receive
+                intelligent integration suggestions.</p>
+        </header>
+
+        <div class="grid">
+            <div class="input-section">
+                <div class="form-group">
+                    <label>NPM Package</label>
+                    <input type="text" id="npmPackage" placeholder="e.g., lodash, axios, react-query">
+                </div>
+
+                <div class="form-group">
+                    <label>Your Codebase</label>
+                    <textarea id="codebase" placeholder="// Paste your existing code here..."></textarea>
+                </div>
+
+                <button id="integrateBtn" class="integrate-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon">
+                        <path d="m18 16 4-4-4-4" />
+                        <path d="m6 8-4 4 4 4" />
+                        <path d="m14.5 4-5 16" />
+                    </svg>
+                    Integrate Library
+                </button>
+            </div>
+
+            <div class="result-section">
+                <div id="resultContainer" class="result-idle"></div>
+                <div class="resultw">
+                    <h2>Integration Result</h2>
+                    <button id="copyBtn" class="integrate-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                        </svg>
+                        Copy
+                    </button>
+                    <div id="rrrr" class="result-idle">Integration result will appear here...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="copy.js"></script>
+</body>
+
+</html>
